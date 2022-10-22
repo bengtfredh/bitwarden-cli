@@ -25,6 +25,7 @@ unzip $RPM_SOURCE_DIR/bw-linux-%{version}.zip
 %build
 
 %install
+install -d -p %{buildroot}%{_bindir}
 install -p -m 0755 bw %{buildroot}%{_bindir}/bw
 
 %files
