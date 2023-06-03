@@ -1,7 +1,7 @@
 Packager: Bengt Fredh <bengt@fredhs.net> 
 
 %define name bitwarden-cli
-%define version 2023.4.0
+%define version 2023.5.0
 %define releasebuild 1
 %define release %{releasebuild}%{?dist}
 
