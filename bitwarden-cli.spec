@@ -13,6 +13,8 @@ License: APL 2.0
 URL: https://bitwarden.com/help/cli/
 Source0: https://github.com/bitwarden/clients/releases/download/cli-v%{version}/bw-linux-%{version}.zip
 
+https://github.com/bitwarden/clients/releases/download/cli-v2023.7.0/bw-linux-2023.7.0.zip
+
 %global debug_package %{nil}
 
 %description
@@ -26,7 +28,7 @@ unzip $RPM_SOURCE_DIR/bw-linux-%{version}.zip
 
 %install
 install -d -p %{buildroot}%{_bindir}
-install -p -m 0755 bw %{buildroot}%{_bindir}/bw
+mv bw %{buildroot}%{_bindir}/
 
 %files
 %{_bindir}/bw
