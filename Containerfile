@@ -10,6 +10,7 @@ run dnf -y --installroot /output --releasever $(cat /etc/system-release | awk '{
 from scratch
 copy --from=build-env /output /
 
+ENV HOME=/data
 WORKDIR /data
 VOLUME /data
 
